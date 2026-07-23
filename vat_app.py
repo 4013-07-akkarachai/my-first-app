@@ -6,4 +6,4 @@ st.header(f"• ภาษีมูลค่าเพิ่ม (VAT 7%): **{vat:.
 net_price = price - vat
 st.header(f"• ราคาสุทธิ: {net_price:.2f} บาท")
 st.divider()
-st.write("นายอัครชัย ติสนธิ ม.4/13 เลขที่7 ")
+st.write("🔥นายอัครชัย ติสนธิ ม.4/13 เลขที่7 ")
