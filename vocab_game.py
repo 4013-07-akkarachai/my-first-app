@@ -101,7 +101,7 @@ ans3 = st.text_input(
     "ข้อ 3: It has a sour taste `_ e _ o _`. 🍋",
     value=st.session_state.ans2_val,
 )
- ans4 = st.text_input(
+ans4 = st.text_input(
     "ข้อ 3: electronic device `L _ p t _ p`. 💻",
     value=st.session_state.ans2_val,
 )
