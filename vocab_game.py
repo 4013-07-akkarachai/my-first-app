@@ -96,8 +96,8 @@ ans1 = st.text_input(
 ans2 = st.text_input(
     "ข้อ 2: Cats love to eat `f _ s h`. 🐟",
     value=st.session_state.ans2_val,
-)
- ans3 = st.text_input(
+) 
+ans3 = st.text_input(
     "ข้อ 3: It has a sour taste `_ e _ o _`. 🍋",
     value=st.session_state.ans2_val,
 )
