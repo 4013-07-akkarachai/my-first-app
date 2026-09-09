@@ -168,7 +168,7 @@ ans3 = st.text_input(
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 3: electronic device `L _ p t _ p`. 💻",
+    "ข้อ 4: electronic device `L _ p t _ p`. 💻",
     value=st.session_state.ans4_val,
 )
 ans5 = st.text_input(
@@ -208,7 +208,7 @@ st.session_state.ans9_val = ans9
 st.session_state.ans10_val = ans10
 # 4. ปุ่มส่งคำตอบ
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
-    if st.button("📥 ส่งคำตอบ"):
+    if st.button("📥 อยากส่งคำตอบมั้ย"):
         st.session_state.is_ended = True
         st.rerun()
 
