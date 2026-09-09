@@ -102,7 +102,7 @@ ans3 = st.text_input(
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 3: electronic device `L _ p t _ p`. 💻",
+    "ข้อ 4: electronic device `L _ p t _ p`. 💻",
     value=st.session_state.ans4_val,
 )
 # อัปเดตค่าล่าสุดเข้าตัวแปร
