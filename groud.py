@@ -47,7 +47,7 @@ def reset_game():
 # 📌 ฟังก์ชัน MessageBox (Dialog)
 # ----------------------------------------------------
 @st.dialog("📊 สรุปผลการเล่นเกม")
-def show_result_dialog(ans1, ans2):
+def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans10):
     st.balloons()
     score = 0
 
@@ -62,28 +62,28 @@ def show_result_dialog(ans1, ans2):
     u_ans9 = ans9.strip().lower()
     u_ans10 = ans10.strip().lower()
     # ตรวจข้อ 1
-    if u_ans1 == "YEMEN":
+    if u_ans1 == "yemen":
         st.success("✅ ข้อ 1: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 1: ยังไม่ถูกต้อง (คุณตอบ '{u_ans1}')")
 
     # ตรวจข้อ 2
-    if u_ans2 == "RUSSIA":
+    if u_ans2 == "russia":
         st.success("✅ ข้อ 2: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 2: ยังไม่ถูกต้อง (คุณตอบ '{u_ans2}')")
 
     # ตรวจข้อ 3
-    if u_ans3 == "Cambodia":
+    if u_ans3 == "cambodia":
         st.success("✅ ข้อ 3: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 3: ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')")
 
     # ตรวจข้อ 4
-    if u_ans4 == "KAZAKHSTAN":
+    if u_ans4 == "kazakhstan":
         st.success("✅ ข้อ 4: ถูกต้อง")
         score += 1
     else:
@@ -97,21 +97,21 @@ def show_result_dialog(ans1, ans2):
         st.error(f"❌ ข้อ 5: ยังไม่ถูกต้อง (คุณตอบ '{u_ans5}')")
 
     # ตรวจข้อ 6
-    if u_ans6 == " Indonesia":
+    if u_ans6 == " indonesia":
         st.success("✅ ข้อ 6: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 6: ยังไม่ถูกต้อง (คุณตอบ '{u_ans6}')")
 
     # ตรวจข้อ 7
-    if u_ans7 == "Turkey":
+    if u_ans7 == "turkey":
         st.success("✅ ข้อ 7: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 7: ยังไม่ถูกต้อง (คุณตอบ '{u_ans7}')")
 
     # ตรวจข้อ 8
-    if u_ans8 == "Iran":
+    if u_ans8 == "iran":
         st.success("✅ ข้อ 8: ถูกต้อง")
         score += 1
     else:
@@ -125,7 +125,7 @@ def show_result_dialog(ans1, ans2):
         st.error(f"❌ ข้อ 9: ยังไม่ถูกต้อง (คุณตอบ '{u_ans9}')")
 
     # ตรวจข้อ 10
-    if u_ans10 == "United Arab Emirates":
+    if u_ans10 == "united arab emirates":
         st.success("✅ ข้อ 10: ถูกต้อง")
         score += 1
     else:
@@ -161,43 +161,43 @@ st.divider()
 
 # 3. ช่องรับคำตอบ (ใช้ value ผูกกับตัวแปรตรงๆ เพื่อสั่งเคลียร์ได้)
 ans1 = st.text_input(
-    "ข้อ 1: `Y _ M _ N`. 🍎",
+    "ข้อ 1: ตอบเป็นพิมพ์เล็ก`Y _ M _ N`. 🍎",
     value=st.session_state.ans1_val,
 )
 ans2 = st.text_input(
-    "ข้อ 2: `R U _ _ I _`. 🐟",
+    "ข้อ 2: ตอบเป็นพิมพ์เล็ก`R U _ _ I _`. 🐟",
     value=st.session_state.ans2_val,
 ) 
 ans3 = st.text_input(
-    "ข้อ 3: `C _ M B O _ _ A`. 🍋",
+    "ข้อ 3: ตอบเป็นพิมพ์เล็ก`C _ M B O _ _ A`. 🍋",
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 4: `K A _ A K _ _ T A _`. 💻",
+    "ข้อ 4: ตอบเป็นพิมพ์เล็ก`K A _ A K _ _ T A _`. 💻",
     value=st.session_state.ans4_val,
 )
 ans5 = st.text_input(
-    "ข้อ 5: `J _ R _ A N`. 🍎",
+    "ข้อ 5: ตอบเป็นพิมพ์เล็ก`J _ R _ A N`. 🍎",
     value=st.session_state.ans5_val,
 )
 ans6 = st.text_input(
-    "ข้อ 6: `I _ D O _ _ S _ A`. 🐟",
+    "ข้อ 6: ตอบเป็นพิมพ์เล็ก`I _ D O _ _ S _ A`. 🐟",
     value=st.session_state.ans6_val,
 ) 
 ans7 = st.text_input(
-    "ข้อ 7: `T _ _ K E Y`. 🍋",
+    "ข้อ 7: ตอบเป็นพิมพ์เล็ก`T _ _ K E Y`. 🍋",
     value=st.session_state.ans7_val,
 )
 ans8 = st.text_input(
-    "ข้อ 8: `I _ A _`. 💻",
+    "ข้อ 8: ตอบเป็นพิมพ์เล็ก`I _ A _`. 💻",
     value=st.session_state.ans8_val,
 )
 ans9 = st.text_input(
-    "ข้อ 9: `J _ P _ N`. 🍋",
+    "ข้อ 9: ตอบเป็นพิมพ์เล็ก`J _ P _ N`. 🍋",
     value=st.session_state.ans9_val,
 )
 ans10 = st.text_input(
-    "ข้อ 10: `U _ I T _ D A _ _ B E _ I _ A T E S`. 💻",
+    "ข้อ 10: ตอบเป็นพิมพ์เล็ก`U _ I T _ D A _ _ B E _ I _ A T E S`. 💻",
     value=st.session_state.ans10_val,
 )
 # อัปเดตค่าล่าสุดเข้าตัวแปร
