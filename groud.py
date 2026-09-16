@@ -76,14 +76,14 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
         st.error(f"❌ ข้อ 2: ยังไม่ถูกต้อง (คุณตอบ '{u_ans2}')")
 
     # ตรวจข้อ 3
-    if u_ans3 == "cambodia":
+    if u_ans3 == "cambodia" :
         st.success("✅ ข้อ 3: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 3: ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')")
 
     # ตรวจข้อ 4
-    if u_ans4 == "kazakhstan":
+    if u_ans4 == "kazakhstan" :
         st.success("✅ ข้อ 4: ถูกต้อง")
         score += 1
     else:
@@ -195,11 +195,11 @@ ans8 = st.text_input(
     value=st.session_state.ans8_val,
 )
 ans9 = st.text_input(
-    "ข้อ 9: ตอบเป็นพิมพ์เล็ก`J _ P _ N`. 🍋",
+    "ข้อ 9: ตอบเป็นพิมพ์เล็ก`J _ P _ N`. 🎌",
     value=st.session_state.ans9_val,
 )
 ans10 = st.text_input(
-    "ข้อ 10: ตอบเป็นพิมพ์เล็ก`U _ I T _ D A _ _ B E _ I _ A T E S`. 💻",
+    "ข้อ 10: ตอบเป็นพิมพ์เล็ก`U _ I T _ D A _ _ B E _ I _ A T E S`. 🇦🇪",
     value=st.session_state.ans10_val,
 )
 # อัปเดตค่าล่าสุดเข้าตัวแปร
