@@ -135,8 +135,10 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
         st.success("เองโคตรสุดยอดเลย")
     elif 6 <= score <= 9:
         st.success("เก่งมาก")
-    elif 1 <= score <= 5:
+    elif 4 <= score <= 5:
         st.success("พอจะมีความรู้นะ")
+    elif 1 <= score <= 3:
+        st.success("ได้อยู่มีความรู้นิดนึง")
     else:
         st.error("ไปอ่านหนังสือมา")
 
