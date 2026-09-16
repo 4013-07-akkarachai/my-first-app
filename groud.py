@@ -199,7 +199,7 @@ ans9 = st.text_input(
     value=st.session_state.ans9_val,
 )
 ans10 = st.text_input(
-    "ข้อ 10: ตอบเป็นพิมพ์เล็ก`U _ I T _ D A _ _ B E _ I _ A T E S`. 🇦🇪",
+    "ข้อ 10: ตอบเป็นพิมพ์เล็ก`U _ I T _ D A _ _ B E _ I _ A T E S`.",
     value=st.session_state.ans10_val,
 )
 # อัปเดตค่าล่าสุดเข้าตัวแปร
