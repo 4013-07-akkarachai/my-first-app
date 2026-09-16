@@ -133,9 +133,9 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
     st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
     if score == 10:
         st.success("เองโคตรสุดยอดเลย")
-    else score == 6-9:
+    else :score == 6-9:
         st.success("เก่งมาก")
-    else score == 1-5:
+    else :score == 1-5:
         st.success("พอจะมีความรู้นะ")
     else:
         st.error("ไปอ่านหนังสือมา")
