@@ -62,79 +62,84 @@ def show_result_dialog(ans1, ans2):
     u_ans9 = ans9.strip().lower()
     u_ans10 = ans10.strip().lower()
     # ตรวจข้อ 1
-    if u_ans1 == "apple":
+    if u_ans1 == "YEMEN":
         st.success("✅ ข้อ 1: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 1: ยังไม่ถูกต้อง (คุณตอบ '{u_ans1}')")
 
     # ตรวจข้อ 2
-    if u_ans2 == "fish":
+    if u_ans2 == "RUSSIA":
         st.success("✅ ข้อ 2: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 2: ยังไม่ถูกต้อง (คุณตอบ '{u_ans2}')")
 
     # ตรวจข้อ 3
-    if u_ans3 == "lemon":
+    if u_ans3 == "Cambodia":
         st.success("✅ ข้อ 3: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 3: ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')")
 
     # ตรวจข้อ 4
-    if u_ans4 == "Laptop":
+    if u_ans4 == "KAZAKHSTAN":
         st.success("✅ ข้อ 4: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 4: ยังไม่ถูกต้อง (คุณตอบ '{u_ans4}')")
 
   # ตรวจข้อ 5
-    if u_ans5 == "apple":
+    if u_ans5 == "jordan":
         st.success("✅ ข้อ 5: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 5: ยังไม่ถูกต้อง (คุณตอบ '{u_ans5}')")
 
     # ตรวจข้อ 6
-    if u_ans6 == "fish":
+    if u_ans6 == " Indonesia":
         st.success("✅ ข้อ 6: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 6: ยังไม่ถูกต้อง (คุณตอบ '{u_ans6}')")
 
     # ตรวจข้อ 7
-    if u_ans7 == "lemon":
+    if u_ans7 == "Turkey":
         st.success("✅ ข้อ 7: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 7: ยังไม่ถูกต้อง (คุณตอบ '{u_ans7}')")
 
     # ตรวจข้อ 8
-    if u_ans8 == "Laptop":
+    if u_ans8 == "Iran":
         st.success("✅ ข้อ 8: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 8: ยังไม่ถูกต้อง (คุณตอบ '{u_ans8}')")
 
     # ตรวจข้อ 9
-    if u_ans9 == "lemon":
+    if u_ans9 == "japan":
         st.success("✅ ข้อ 9: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 9: ยังไม่ถูกต้อง (คุณตอบ '{u_ans9}')")
 
     # ตรวจข้อ 10
-    if u_ans10 == "Laptop":
+    if u_ans10 == "United Arab Emirates":
         st.success("✅ ข้อ 10: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 10: ยังไม่ถูกต้อง (คุณตอบ '{u_ans10}')")
     st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
-    if score == 6:
-        st.success("🎉 You win!")
-    else:
-        st.error("💀 You lose!")
+    if score == 10:
+        st.success("เองโคตรสุดยอดเลย")
+    else score == 6-9:
+        st.success("เก่งมาก")
+    else score == 1-5:
+        st.success("พอจะมีความรู้นะ")
+   else:
+        st.error("ไปอ่านหนังสือมา")
+
 
 
 # ----------------------------------------------------
@@ -144,7 +149,7 @@ st.button("🎮 เริ่มเล่นเกม", on_click=reset_game)
 
 # 2. แถบแสดงเวลานับถอยหลัง
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
-    time_left = int(30 - (time.time() - st.session_state.start))
+    time_left = int(120 - (time.time() - st.session_state.start))
 
     if time_left > 0:
         st.error(f"⏳ เหลือเวลา: {time_left} วินาที")
@@ -156,43 +161,43 @@ st.divider()
 
 # 3. ช่องรับคำตอบ (ใช้ value ผูกกับตัวแปรตรงๆ เพื่อสั่งเคลียร์ได้)
 ans1 = st.text_input(
-    "ข้อ 1: An `a _ _ l e` a day keeps the doctor away. 🍎",
+    "ข้อ 1: `Y _ M _ N`. 🍎",
     value=st.session_state.ans1_val,
 )
 ans2 = st.text_input(
-    "ข้อ 2: Cats love to eat `f _ s h`. 🐟",
+    "ข้อ 2: `R U _ _ I _`. 🐟",
     value=st.session_state.ans2_val,
 ) 
 ans3 = st.text_input(
-    "ข้อ 3: It has a sour taste `_ e _ o _`. 🍋",
+    "ข้อ 3: `C _ M B O _ _ A`. 🍋",
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 4: electronic device `L _ p t _ p`. 💻",
+    "ข้อ 4: `K A _ A K _ _ T A _`. 💻",
     value=st.session_state.ans4_val,
 )
 ans5 = st.text_input(
-    "ข้อ 5: An `a _ _ l e` a day keeps the doctor away. 🍎",
+    "ข้อ 5: `J _ R _ A N`. 🍎",
     value=st.session_state.ans5_val,
 )
 ans6 = st.text_input(
-    "ข้อ 6: Cats love to eat `f _ s h`. 🐟",
+    "ข้อ 6: `I _ D O _ _ S _ A`. 🐟",
     value=st.session_state.ans6_val,
 ) 
 ans7 = st.text_input(
-    "ข้อ 7: It has a sour taste `_ e _ o _`. 🍋",
+    "ข้อ 7: `T _ _ K E Y`. 🍋",
     value=st.session_state.ans7_val,
 )
 ans8 = st.text_input(
-    "ข้อ 8: electronic device `L _ p t _ p`. 💻",
+    "ข้อ 8: `I _ A _`. 💻",
     value=st.session_state.ans8_val,
 )
 ans9 = st.text_input(
-    "ข้อ 9: It has a sour taste `_ e _ o _`. 🍋",
+    "ข้อ 9: `J _ P _ N`. 🍋",
     value=st.session_state.ans9_val,
 )
 ans10 = st.text_input(
-    "ข้อ 10: electronic device `L _ p t _ p`. 💻",
+    "ข้อ 10: `U _ I T _ D A _ _ B E _ I _ A T E S`. 💻",
     value=st.session_state.ans10_val,
 )
 # อัปเดตค่าล่าสุดเข้าตัวแปร
