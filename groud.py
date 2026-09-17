@@ -163,43 +163,43 @@ st.divider()
 
 # 3. ช่องรับคำตอบ (ใช้ value ผูกกับตัวแปรตรงๆ เพื่อสั่งเคลียร์ได้)
 ans1 = st.text_input(
-    "ข้อ 1: `Y E M A N`.ตอบเป็นภาษาไทย ",
+    "ข้อ 1: 🇾🇪`เ ย _ _ น`. ",
     value=st.session_state.ans1_val,
 )
 ans2 = st.text_input(
-    "ข้อ 2: ตอบเป็นพิมพ์เล็ก`R U _ _ I _`. ",
+    "ข้อ 2: RU`รั _ เ ซี _`. ",
     value=st.session_state.ans2_val,
 ) 
 ans3 = st.text_input(
-    "ข้อ 3: ตอบเป็นพิมพ์เล็ก`C _ M B O _ _ A`. ",
+    "ข้อ 3: KH`เ _ _ ร`. ",
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 4: ตอบเป็นพิมพ์เล็ก`K A _ A K _ _ T A _`. ",
+    "ข้อ 4: KZ`ค _ ซั _ ส _ _ น`. ",
     value=st.session_state.ans4_val,
 )
 ans5 = st.text_input(
-    "ข้อ 5: ตอบเป็นพิมพ์เล็ก`J _ R _ A N`. ",
+    "ข้อ 5: JO`จ _ ร์ แ _ _`. ",
     value=st.session_state.ans5_val,
 )
 ans6 = st.text_input(
-    "ข้อ 6: ตอบเป็นพิมพ์เล็ก`I _ D O _ _ S _ A`. 🐟",
+    "ข้อ 6: ID` อิ _ โ _ นี เ _ ย`. ",
     value=st.session_state.ans6_val,
 ) 
 ans7 = st.text_input(
-    "ข้อ 7: ตอบเป็นพิมพ์เล็ก`T _ _ K E Y`. ",
+    "ข้อ 7: TR`ตุ _ _`. ",
     value=st.session_state.ans7_val,
 )
 ans8 = st.text_input(
-    "ข้อ 8: ตอบเป็นพิมพ์เล็ก`I _ A _`. ",
+    "ข้อ 8: IR`อิ _ ร่ _ _`. ",
     value=st.session_state.ans8_val,
 )
 ans9 = st.text_input(
-    "ข้อ 9: ตอบเป็นพิมพ์เล็ก`J _ P _ N`. 🎌",
+    "ข้อ 9: JP`ญี่ _ _`. 🎌",
     value=st.session_state.ans9_val,
 )
 ans10 = st.text_input(
-    "ข้อ 10: ตอบเป็นพิมพ์เล็ก`U _ I T _ D A _ _ B E _ I _ A T E S`.",
+    "ข้อ 10: UAE`ส _ รั ฐ _ า _ รั _ เ _ มิ _ ร _ ส์`.",
     value=st.session_state.ans10_val,
 )
 # อัปเดตค่าล่าสุดเข้าตัวแปร
